@@ -26,8 +26,8 @@ abstract class Repository {
     public function __construct(IDbDriver $driver)
     {
         $this->driver = $driver;
+        $this->driver->connect();
     }
-
 }
 
 class UserRepository extends Repository {
