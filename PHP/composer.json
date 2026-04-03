@@ -1,0 +1,16 @@
+{
+    "name": "matias/php",
+    "description": "Padrões de projeto em php",
+    "autoload": {
+        "psr-4": {
+            "Matias\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MatiasWebDev2",
+            "email": "matiaswebdev2@gmail.com"
+        }
+    ],
+    "require": {}
+}
