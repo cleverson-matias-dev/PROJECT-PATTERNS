@@ -11,7 +11,7 @@ interface INofifier {
 
 class MailNotifier implements INofifier {
     public function notify(string $addr): void {
-        // send email...
+        echo 'MailNotifier: enviando email...';
     }
 }
 
@@ -23,7 +23,7 @@ class DiferentNotifier {
     }
 
     public function sendEmail() {
-        // Send email to this->address
+        echo 'DiferentNotifier: inviando notificação';
     }
 }
 
@@ -48,5 +48,5 @@ class Client {
     }
 }
 
-$client = new Client(new MailNotifier());
+$client = new Client(new DiferentNotifierAdapter());
 $client->sendNotification('email@email.com');
